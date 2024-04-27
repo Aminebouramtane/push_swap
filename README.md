@@ -17,14 +17,14 @@ To use our PushSwap implementation, follow these steps:
 1. **Clone the Repository**:
 
     ```
-    git clone https://github.com/your_username/push_swap.git
+    git clone https://github.com/Aminebouramtane/push_swap.git
     cd push_swap
     ```
 
 2. **Compile**:
 
     ```
-    make
+    make or make bonus
     ```
 
 3. **Run push_swap**:
@@ -45,35 +45,3 @@ To use our PushSwap implementation, follow these steps:
     ./push_swap 3 1 4 2 | ./checker 3 1 4 2
     ```
 
-6. **Flags**:
-
-    Both push_swap and checker support the following flags:
-
-    - `-v` or `--verbose`: Verbose mode displays each step of the sorting algorithm.
-
-    Example:
-
-    ```
-    ./push_swap -v 3 1 4 2
-    ```
-
-    - `-h` or `--help`: Displays help information.
-
-    Example:
-
-    ```
-    ./push_swap --help
-    ```
-
-## Resources
-
-- [Subject PDF](https://cdn.intra.42.fr/pdf/pdf/4248/push_swap.en.pdf)
-
-## Contributors
-
-- [Your Name](https://github.com/your_username)
-- [Teammate Name](https://github.com/teammate_username)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
