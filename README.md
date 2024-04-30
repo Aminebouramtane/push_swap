@@ -24,22 +24,26 @@ To use our PushSwap implementation, follow these steps:
 2. **Compile**:
 
     ```
-    make or make bonus
+    make
     ```
+    or
+   ```
+    make bonus
+   ```
 
-3. **Run push_swap**:
+4. **Run push_swap**:
 
     ```
     ./push_swap [list of integers]
     ```
 
-4. **Run checker**:
+5. **Run checker**:
 
     ```
     ./checker [list of integers]
     ```
 
-5. **Example**:
+6. **Example**:
 
     ```
     ./push_swap 3 1 4 2 | ./checker 3 1 4 2
