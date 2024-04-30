@@ -1,6 +1,6 @@
 # PushSwap - 1337 Project
 
-PushSwap is a sorting algorithm project at 42. The goal is to write a program in C that sorts an array of integers using two stacks and a limited set of operations. This repository contains our solution for the PushSwap project.
+PushSwap is a sorting algorithm project at 1337. The goal is to write a program in C that sorts an array of integers using two stacks and a limited set of operations. This repository contains our solution for the PushSwap project.
 
 ## Overview
 
