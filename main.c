@@ -6,7 +6,7 @@
 /*   By: abouramt <abouramt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 18:04:11 by abouramt          #+#    #+#             */
-/*   Updated: 2024/04/29 13:32:39 by abouramt         ###   ########.fr       */
+/*   Updated: 2024/05/02 17:23:31 by abouramt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 void	ft_ix_size(t_list **stack_a, t_list **stack_b)
 {
-	if (ft_lstsize(*stack_a) == 1)
+	if (ft_lstsize(*stack_a) == 1 || !ft_sorted(stack_a))
 		return ;
-	if (ft_lstsize(*stack_a) == 2)
+	else if (ft_lstsize(*stack_a) == 2 && !ft_sorted(stack_a))
+		return ;
+	if (ft_lstsize(*stack_a) == 2 && ft_sorted(stack_a))
 		swap_stack(stack_a, 'a', 1);
 	else if (ft_lstsize(*stack_a) == 3)
 		ft_sort_three(stack_a, 1);

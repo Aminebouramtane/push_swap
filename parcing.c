@@ -6,7 +6,7 @@
 /*   By: abouramt <abouramt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 18:07:25 by abouramt          #+#    #+#             */
-/*   Updated: 2024/04/27 13:35:54 by abouramt         ###   ########.fr       */
+/*   Updated: 2024/05/04 06:36:03 by abouramt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,11 @@ void	ft_check_double(char **data)
 	while (data[j])
 	{
 		i = j + 1;
+		if ((ft_atoi(data[j])) > 2147483647 || ft_strlen(data[j]) >= 11)
+		{
+			write(2, "Error\n", 6);
+			exit (1);
+		}
 		while (data[i])
 		{
 			if (ft_atoi(data[j]) == ft_atoi(data[i]))
@@ -85,7 +90,9 @@ void	ft_check_sign(char **data)
 		while (data[j][i])
 		{
 			if ((data[j][i] == '+' && data[j][i + 1] == '+') \
-			|| (data[j][i] == '-' && data[j][i + 1] == '-'))
+			|| (data[j][i] == '-' && data[j][i + 1] == '-') \
+			|| (data[j][i] == '+' && data[j][i + 1] == '-') \
+			|| (data[j][i] == '-' && data[j][i + 1] == '+'))
 			{
 				write(2, "Error\n", 6);
 				exit(1);

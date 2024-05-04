@@ -6,7 +6,7 @@
 /*   By: abouramt <abouramt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 11:44:37 by abouramt          #+#    #+#             */
-/*   Updated: 2024/04/27 11:44:50 by abouramt         ###   ########.fr       */
+/*   Updated: 2024/05/02 11:59:12 by abouramt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,4 +81,6 @@ void	ft_index(t_list **stack)
 		}
 		i++;
 	}
+	free(tab);
+	tab = NULL;
 }

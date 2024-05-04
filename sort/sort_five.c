@@ -6,7 +6,7 @@
 /*   By: abouramt <abouramt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 12:02:42 by abouramt          #+#    #+#             */
-/*   Updated: 2024/04/29 12:19:14 by abouramt         ###   ########.fr       */
+/*   Updated: 2024/04/30 11:42:08 by abouramt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,8 @@ static	void	ft_move_values(t_list **stack_a, \
 void	ft_sort_five(t_list **stack_a, t_list **stack_b, int flag)
 {
 	int		min;
-	int		size;
-	t_list	*tmp;
 
 	min = ft_get_min(stack_a);
-	tmp = (*stack_a);
-	size = ft_lstsize(tmp);
 	if (!ft_sorted(stack_a))
 		return ;
 	else

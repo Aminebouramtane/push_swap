@@ -6,7 +6,7 @@
 /*   By: abouramt <abouramt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 18:04:11 by abouramt          #+#    #+#             */
-/*   Updated: 2024/04/29 13:08:54 by abouramt         ###   ########.fr       */
+/*   Updated: 2024/05/04 06:40:13 by abouramt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	ft_check_line(t_list **stack_a, t_list **stack_b)
 		free(line);
 		line = get_next_line(0);
 	}
-	if (!ft_sorted(stack_a))
+	if (!ft_sorted(stack_a) && ft_lstsize(*stack_b) == 0)
 		write(1, "OK\n", 3);
 	else
 		write(1, "KO\n", 3);

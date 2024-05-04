@@ -1,6 +1,6 @@
 NAME =push_swap
 
-NAME_B = checker_bonus
+NAME_B = checker
 
 LIBFT_NAME = libft/libft.a
 

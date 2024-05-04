@@ -6,7 +6,7 @@
 /*   By: abouramt <abouramt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 10:43:45 by abouramt          #+#    #+#             */
-/*   Updated: 2024/04/29 12:25:03 by abouramt         ###   ########.fr       */
+/*   Updated: 2024/04/30 11:42:37 by abouramt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,9 @@ void	ft_sort_three(t_list **stack, int flag)
 {
 	int		mid;
 	int		min;
-	int		size;
 
 	min = ft_get_min(stack);
 	mid = ft_get_mid(stack);
-	size = ft_lstsize(*stack);
 	if (!ft_sorted(stack))
 		return ;
 	else
