@@ -49,3 +49,7 @@ To use our PushSwap implementation, follow these steps:
     ./push_swap 3 1 4 2 | ./checker 3 1 4 2
     ```
 
+
+
+
+
