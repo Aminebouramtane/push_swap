@@ -26,7 +26,7 @@ To use our PushSwap implementation, follow these steps:
     ```
     make
     ```
-    or
+    or :
    ```
     make bonus
    ```
