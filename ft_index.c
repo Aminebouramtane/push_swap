@@ -62,11 +62,9 @@ void	ft_index(t_list **stack)
 	int		*tab;
 	int		i;
 	t_list	*tmp;
-	int		j;
 
 	tab = ft_add_in_tab(stack);
 	i = 0;
-	j = 0;
 	while (i < ft_lstsize(*stack))
 	{
 		tmp = *stack;
