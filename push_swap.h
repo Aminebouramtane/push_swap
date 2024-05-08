@@ -40,6 +40,5 @@ void	ft_push_to_b(t_list **stack_a, t_list **stack_b, int range, int flag);
 int		ft_position(t_list **stack, int max);
 void	ft_push_to_a(t_list **stack_a, t_list **stack_b, int flag);
 void	ft_free(char **str);
-void	ft_join_my_arr(char **str, char *arr);
 
 #endif
